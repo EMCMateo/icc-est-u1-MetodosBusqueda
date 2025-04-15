@@ -10,7 +10,7 @@ public class MetodosBusqueda{
     public MetodosBusqueda(Persona[] persons) {
         show = new ShowConsole();
         this.personas = personas;
-        ShowPersonByCoode();
+        showPersonByCoode();
     }
 
     public int FindByPerson(int codigo){
@@ -19,13 +19,13 @@ public class MetodosBusqueda{
                     System.out.println("El elemento " + codigo + " se encuentra en la posicion " + i);
                     return i;
                 }else {
-                return -1;
+               
                 }
          
     }return -1;
 }
     
-    public void ShowPersonByCoode() {
+    public void showPersonByCoode() {
         int codeToFind = show.getCodigo();
         int indexPersona = FindByPerson(codeToFind);
         if (indexPersona != -1) {
