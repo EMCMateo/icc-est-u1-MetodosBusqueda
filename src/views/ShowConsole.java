@@ -12,11 +12,18 @@ public class ShowConsole {
         System.out.println("El codigo es: " + codigo);
         return codigo;
     }
+
+    public String getNombre(){
+        System.out.println("Digite el nombre de la persona: ");
+        String nombre = scanner.nextLine();
+        System.out.println("El nombre es: " + nombre);
+        return nombre;
+    }
     public void showMessage(String message)
     {
         System.out.println(message);
     }
 
-    
+
         public ShowConsole(){}
 }

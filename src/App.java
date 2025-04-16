@@ -1,3 +1,4 @@
+import controllers.MetodoBusquedaBin;
 import controllers.MetodosBusqueda;
 import models.Persona;
 public class App {
@@ -6,7 +7,7 @@ public class App {
         int[] numeros = {5, 8, 12, 20, 33, 45};
         int busquedaLineal = 20;
         Persona [] personass = new Persona[7];
-        MetodosBusqueda metodosBusqueda = new MetodosBusqueda();
+        //MetodosBusqueda metodosBusqueda = new MetodosBusqueda();
 
 
 
@@ -19,8 +20,15 @@ public class App {
         personass [4] = new Persona(105, "Luis");
         personass [5] = new Persona(106, "Sofia");
         personass [6] = new Persona(107, "Pedro");
+        
 
-        MetodosBusqueda metodosBusqueda2 = new MetodosBusqueda(personass);
+        //MetodosBusqueda metodosBusqueda2 = new MetodosBusqueda(personass);
+
+        MetodoBusquedaBin metodosBusquedaBin = new MetodoBusquedaBin(personass);
+
+        //metodosBusquedaBin.showPersonByCode();
+
+        metodosBusquedaBin.ShowPersonByName();
 
 
        
